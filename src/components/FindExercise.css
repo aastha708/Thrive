@@ -1,0 +1,277 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #1e1e1e; */
+    background: linear-gradient(54deg, #9164ff, #8bfff4);
+  
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .exercise_container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    height: auto;
+  }
+  
+  .exh {
+    color: #22255c;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in;
+  }
+  .exh3{
+    color: #22255c;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .dropdown-container, .exercise-list, .final-schedule-button {
+    margin: 20px 0;
+  }
+  
+  .sec {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #7c7dd6;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sec:hover {
+    background-color: #7c7dd6;
+    color: white;
+  }
+  
+  .days-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .day {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .day:hover {
+    background-color: #8383c6;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .day.selected {
+    background-color: #8383c6;
+    color: white;
+  }
+  
+  .exercise-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .exercise-list li {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #1e1f72;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .exercise-list li:hover {
+    background-color: #8383c6;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .exercise-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .exercise-table th, .exercise-table td {
+    border: 1px solid #1e1f72;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .exercise-table th {
+    background-color: #7b7cd7;
+    color: white;
+  }
+  
+  .ip[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #1e1f72;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .ip[type="number"]:focus {
+    border-color: #1e1f72;
+    outline: none;
+    background-color: #1e1f72;
+    color: white;
+  }
+  
+  .clkbtn {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #7c7dd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .clkbtn:hover {
+    background-color: #f0f0f0;
+    color: #1e1f72;
+    transform: scale(1.05);
+  }
+  
+  .final-schedule-button {
+    padding: 15px 25px;
+    margin-top: 20px;
+  }
+  
+  .final-schedule {
+    margin-top: 20px;
+  }
+  
+  .final-schedule .days-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .day-schedule {
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .day-schedule:hover {
+    transform: scale(1.05);
+  }
+  
+  .exercise-card {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #6d5599c2;
+    border-radius: 10px;
+    /* background-color: #7273c4; */
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .exercise-card p {
+    margin: 5px 0;
+  }
+  
+  .exercise-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .exercise-table {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .days-container {
+      flex-wrap: wrap;
+    }
+    
+    .day {
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .exercise-table {
+      width: 100%;
+    }
+    
+    .sec {
+      width: 100%;
+    }
+    
+    .ip[type="number"] {
+      width: 50px;
+    }
+    
+    .clkbtn {
+      padding: 8px 12px;
+    }
+    
+    .final-schedule-button {
+      padding: 12px 20px;
+    }
+    
+    .day-schedule {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .exh {
+      font-size: 24px;
+    }
+    
+    .sec, .ip[type="number"] {
+      font-size: 14px;
+    }
+    
+    .clkbtn {
+      font-size: 12px;
+    }
+    
+    .final-schedule-button {
+      font-size: 14px;
+    }
+    
+    .day-schedule {
+      padding: 15px;
+    }
+  }
+  

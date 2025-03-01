@@ -1,0 +1,254 @@
+.origin {
+    width: 100%;
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.origin-text {
+    margin-left: -45px;
+    position: relative;
+    z-index: 2;
+}
+
+.origin h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(7 28 68);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.origin h3 {
+    margin-top: 25px;
+    font-size: 22px;
+    color: #42467a;
+    animation: typing 10s steps(50, end) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.origin button {
+    margin-top: 22px;
+    font-size: 22px;
+    width: 355px;
+    height: 46px;
+    background-color: #102957;
+    color: aliceblue;
+    border: none;
+    border-radius: 23px;
+    border: 2px solid;
+    padding: 0;
+    transition: all 0.4s ease;
+}
+
+.origin button:hover {
+    border: 2px solid rgb(5, 49, 61);
+    background-color: transparent;
+    color: rgb(5, 49, 61);
+    transform: scale(1.1);
+}
+
+.origin-img {
+    margin-left: -263px;
+    height: 50vh;
+    z-index: 2;
+    position: relative;
+}
+
+.origin-img img {
+    margin-top: -60px;
+    width: 117%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #42467a;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .origin {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .origin-text {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .origin-img {
+        margin-left: 0;
+        height: auto;
+    }
+
+    .origin-img img {
+        width: 100%;
+    }
+
+    .origin h1 {
+        font-size: 36px;
+    }
+
+    .origin h3 {
+        font-size: 18px;
+    }
+
+    .origin button {
+        width: 80%;
+    }
+}
+/* .origin {
+    width: 100%;
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+}
+
+.origin-text {
+    margin-left: -45px;
+    animation: slideInLeft 1s ease-in-out;
+    z-index: 2;
+}
+
+.origin h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(7, 28, 68);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.origin h3 {
+    margin-top: 25px;
+    font-size: 22px;
+    color: #42467a;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.origin button {
+    margin-top: 22px;
+    font-size: 22px;
+    width: 355px;
+    height: 46px;
+    background-color: #102957;
+    color: aliceblue;
+    border: none;
+    border-radius: 23px;
+    border: 2px solid;
+    padding: 0;
+    transition: all 0.4s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.origin button:hover {
+    border: 2px solid rgb(5, 49, 61);
+    background-color: transparent;
+    color: rgb(5, 49, 61);
+}
+
+.origin-img {
+    margin-left: -263px;
+    height: 50vh;
+    animation: slideInRight 1s ease-in-out;
+    z-index: 2;
+}
+
+.origin-img img {
+    margin-top: -60px;
+    width: 117%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .origin {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .origin-text {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .origin-img {
+        margin-left: 0;
+        height: auto;
+    }
+
+    .origin-img img {
+        width: 100%;
+    }
+
+    .origin h1 {
+        font-size: 36px;
+    }
+
+    .origin h3 {
+        font-size: 18px;
+    }
+
+    .origin button {
+        width: 80%;
+    }
+} */

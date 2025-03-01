@@ -1,0 +1,114 @@
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bmi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0;
+
+
+  }
+  form {
+    
+    margin: 0px;
+}
+  
+  .bmicontainer {
+    box-shadow: 0px 0px 12px #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .input-group {
+    margin: 8px 0;
+  }
+  
+  .input-with-unit {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    width: 70%;
+    font-size: 1.2rem;
+    padding: 8px 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  select {
+    width: 30%;
+    font-size: 1.2rem;
+    padding: 8px 4px;
+    margin-left: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+  }
+  
+  .btn1 {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 8px 0;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-outline {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .center {
+    text-align: center;
+    margin: 24px 0;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .img-container img {
+    height: 100%;
+    width: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .input-with-unit {
+      flex-direction: column;
+    }
+  
+    input, select {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 8px;
+    }
+  }
+  

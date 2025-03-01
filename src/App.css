@@ -1,0 +1,364 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+body
+{
+  font-size: 16px;
+  background: linear-gradient(54deg, #9164ff, #8bfff4);
+  /* height: 100vh; */
+  
+}
+
+
+.about
+{
+  padding: 10px;
+  background-color:skyblue ;
+}
+.dashboard
+{
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  padding: 20px;
+  /* background-color: lightblue; */
+  display: flex;
+  column-gap: 2%;
+}
+
+.workout{
+  width: 20%;
+  height: 90vh;
+  padding: 10px;
+  font-size: 30px;
+  background-color: rgb(196, 197, 255);
+}
+
+.Home
+{
+  width: 100%;
+  padding: 20px;
+  background-color: lightblue;
+  display: flex;
+  column-gap: 2%;
+}
+
+.serv{
+  width: 20%;
+  height: 300px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: rgb(181, 231, 175);
+}
+
+
+
+.btn
+{
+  display: inline-block;
+  width: fit-content;
+  padding: .9rem .7rem;
+  /* border-radius: 25px; */
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all;
+  text-decoration: none;
+}
+
+.btn-primary
+{
+  background-color: rgb(16, 41, 87);
+  color: white;
+
+}
+
+.btn-category
+{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn-sm
+{
+  font-size: .9rem;
+  padding: .4rem .8rem;
+  font-weight: 500;
+}
+.btn:hover
+{
+  background-color: rgb(171, 200, 190);
+  color: black;
+}
+
+/*----------- start nav bar----------------- */
+.nav {
+  height: 4rem;
+  display: grid;
+  width: 100%;
+  place-items: center;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1.5rem 1rem;
+  margin-bottom: 30px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative; /* Add this line */
+  z-index: 10;
+}
+
+.nav-logo h3 {
+  color: #055694;
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none; /* Ensure no underline for the logo */
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(26, 24, 87); /* Set the link color */
+  font-size: 27px;
+  font-weight: 700;
+  margin: 3px;
+  position: relative; /* Needed for the pseudo-element */
+  padding-bottom: 5px; /* Space for the underline */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0; /* Ensure no extra padding */
+  margin: 0; /* Ensure no extra margin */
+  list-style: none; /* Remove default list style */
+}
+
+.nav-menu li {
+  position: relative; /* Required for the underline animation */
+}
+
+.nav-menu li a {
+  color: rgb(26, 24, 87); /* Set the link color */
+  text-decoration: none; /* Ensure text-decoration is removed */
+  position: relative;
+  padding-bottom: 5px; /* Space for the underline */
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.nav-menu li a:not(.signupbtn)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: rgb(23, 39, 53); /* Color of the underline */
+  transition: width 1s ease; /* Animation effect */
+}
+
+.nav-menu li a:not(.signupbtn):hover::after {
+  width: 100%; /* Underline expands on hover */
+}
+
+.signupbtn {
+  background-color: white;
+  border-radius: 22px;
+  padding: 8px 22px;
+  margin-top: 5px;
+  color: rgb(16, 41, 87);;
+  font-size: 19px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.signupbtn:hover {
+  color: #2a3242;
+  background-color: #cacfd2;
+}
+
+.nav-toggle-button {
+  background: transparent;
+  color: rgb(247, 245, 241);
+  display: none;
+  z-index: 20;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-menu {
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 65%;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      transform: translateY(-100%);
+      opacity: 0;
+      z-index: 10;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+
+  .nav-menu.show {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  .nav-toggle-button {
+      display: block;
+  }
+}
+
+/* end nav bar */
+
+/* -------------Start error Page ----------*/
+.error-center
+{
+    text-align: center;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.error-center h2{
+  font-size: 50px;
+}
+.error-center h3{
+  font-size: 30px;
+}
+/* -------------End error page ------------ */
+
+/* ---Footer start----- */
+footer{
+  background-color: rgb(7 28 68);
+  /* margin-top: 8rem; */
+  /* padding-top: 6rem; */
+
+}
+.footer-categories
+{
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+.footer-categories li Link{
+  color: white;
+  background-color: rgb(136, 61, 61);
+  padding: .6rem 1.4rem;
+  border-radius: 2px;
+  transition: all;
+}
+.footer-categories li Link:hover{
+  color: bisque;
+  background-color: beige;
+}
+.footer-copyright
+{
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+  /* border-top: 1px solid black; */
+}
+
+/* ----Footer end---- */
+
+/*--------Start Media Screen------- */
+
+@media (max-width:1024px)
+{
+  /* h1{
+    font-size: 1.5rem !important;
+  }
+  h2{
+    font-size: 1.4rem !important;
+  } */
+
+  /* navbar----- */
+  .nav-container{
+    position: relative;
+    height: 90%;
+  }
+  .nav-menu{
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    gap: 0;
+    right: 0;
+    flex-direction: column;
+    perspective:400px ;
+    background: #72a0d6;
+    padding-top: 8px;
+  }
+  .nav-menu li {
+    padding: 20px;
+    margin: 0px 23px;
+    width: 70%;
+    box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26);
+    animation: NavAni forwards 400ms ease;
+    opacity: 0;
+    transform: rotateY(90deg);
+    transform-origin: top ;
+  }
+
+  /* ---------NavAnimation */
+  @keyframes NavAni {
+    to{
+      opacity: 1;
+      transform: rotateY(0);
+    }
+    
+  }
+  .nav-menu li :nth-child(2){
+    animation-delay: 200ms;
+
+  }
+  .nav-menu li :nth-child(3){
+    animation-delay: 400ms;
+
+  }
+  .nav-menu li :nth-child(4){
+    animation-delay: 600ms;
+
+  }
+  .nav-menu li :nth-child(5){
+    animation-delay: 800ms;
+
+  }
+  
+  .nav-menu li Link
+  {
+    display: flex;
+    background-color: rgb(31, 56, 78);
+    padding: 1.4rem 4.2rem;
+
+  }
+  .nav-toggle-button
+  {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+  }
+}
+
+/*--------End Media Screen------- */
+

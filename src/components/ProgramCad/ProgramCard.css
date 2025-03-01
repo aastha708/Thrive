@@ -1,0 +1,161 @@
+*
+{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.program_outer {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(54deg, #9164ff, #8bfff4);
+}
+/* body {
+    background-image: linear-gradient(54deg, #9164ff, #8bfff4);
+
+  } */
+  
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: inherit;
+  }
+  
+.program_outer h1{
+     font-size: 50px;
+    font-size: 3em;
+    color: rgb(5, 49, 61);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+
+}
+.program_outer h1 span{
+    color: rgb(255 255 255);
+}
+.programs
+{
+    margin: 50px auto;
+    margin-top: 115px;
+    width: 85%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ;
+    grid-gap: 40px;
+
+
+}
+.program{
+    background-color: rgb(203 214 255);
+    box-shadow: 0px 4px 8px 0px rgba(0 , 0, 0, 0.2);
+    border-radius: 18px; 
+    overflow: hidden;
+    height: 100%; 
+}
+.program:hover
+{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+
+}
+
+.image-section {
+    height: 225px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+.image-section.img1{
+    
+    background-image: url('Images/nutrition_counting.png');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    transform:scale(1);
+
+}
+.image-section.img1:hover
+{
+    transform: scale(1.04);
+    transition: transform 1s ease;
+}
+.image-section.img2{
+    
+    background-image: url('Images/weight.jpg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform:scale(1);
+    
+}
+.image-section.img2:hover
+{
+    transform: scale(1.04);
+    transition: transform 1s ease;
+}
+.image-section.img3{
+    
+    background-image: url('Images/workout-schedule.jpg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform:scale(1);
+    
+}
+.image-section.img3:hover
+{
+    transform: scale(1.04);
+    transition: transform 1s ease;
+}
+
+.content {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+.content h2 {
+    letter-spacing: 1x;
+    margin-top: 5px;
+    color: #061c45; 
+    font-weight: 700; 
+
+}
+
+
+.content p {
+    margin: 15px 0px;
+    font-size: 18px;
+    color: #061c45;
+    font-style: italic;
+}
+
+
+.content button {
+    
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    background-color: #1a3462; 
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: background-color 0.4s ease;
+    margin-bottom: 8px;
+}
+
+
+.content button:hover {
+    /* background-color: #383f90bf; */
+    background-image: linear-gradient(54deg, #9164ff, #8bfff4);
+    color: azure;
+}
+
+
+
+ 

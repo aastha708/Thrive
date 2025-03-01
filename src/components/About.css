@@ -1,0 +1,261 @@
+/* .about-container {
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #e3ffe7, #d9e7ff);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .feature-item {
+    width: 22%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+    background-color: #f1f1f1;
+  }
+  
+  .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .thank-you {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .slide-in-left {
+    opacity: 0;
+    animation: slideInLeft 1s ease-in-out forwards;
+  }
+  
+  .slide-in-right {
+    opacity: 0;
+    animation: slideInRight 1s ease-in-out forwards;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .mission-section .slide-in-left {
+    animation-delay: 0.3s;
+  }
+  
+  .features-section .slide-in-right {
+    animation-delay: 0.6s;
+  }
+  
+  .contact-section .slide-in-left {
+    animation-delay: 0.9s;
+  }
+  
+  .thank-you {
+    animation-delay: 1.2s;
+  }
+   */
+   .about-container {
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    /* background: linear-gradient(to right, #e3ffe7, #d9e7ff); */
+    overflow: hidden;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature-item {
+    width: 22%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    background-color: #f1f1f1;
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.thank-you {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    text-align: justify;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.slide-in-left {
+    text-align: justify;
+    /* opacity: 0; */
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.mission-section .slide-in-left {
+    animation-delay: 0.3s;
+}
+
+.features-section .slide-in-right {
+    animation-delay: 0.6s;
+}
+
+.contact-section .slide-in-left {
+    animation-delay: 0.9s;
+}
+
+.thank-you {
+    animation-delay: 1.2s;
+}
+.pcen
+{
+    text-align: center;
+}
